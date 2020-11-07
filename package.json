@@ -1,0 +1,50 @@
+{
+  "name": "TaskTracker",
+  "version": "1.0.0",
+  "description": "TaskTracker is a web application that aims to delegate responsibilities between housemates and provide an outlet to express comments and suggestions to one another anonymously. Living with others can be difficult, but TaskTracker makes it easy to ensure everyone does their part. ### Functionality & MVP With this application, users will be able to: + Create a list of weekly responsibilities that can be randomly delegated + Participate in an anonymous group chat and post photos to highlight certain issues + Private messaging between members in your house + Track stats and visualize the distribution of responsibilities + Chat with other neighbors living near or around you",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "engines": {
+    "node": "8.9.0",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "server-install": "npm install --prefix server",
+    "server": "npm run server --prefix server",
+    "css-watch": "sass --watch client/public/stylesheets/main.scss:client/src/index.css",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run css-watch\"",
+    "start": "npm run server && npm run client",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client && npm install --prefix server && npm run build --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schen13/TaskTracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schen13/TaskTracker/issues"
+  },
+  "homepage": "https://github.com/schen13/TaskTracker#readme",
+  "dependencies": {
+    "concurrently": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-middleware": "^3.2.0",
+    "webpack-dev-server": "^3.1.7"
+  }
+}

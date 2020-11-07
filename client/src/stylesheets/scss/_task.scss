@@ -1,0 +1,160 @@
+body {
+  font-family: Circular,
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif;
+}
+
+#create-task-modal, .edit-task{
+  overflow-y: visible;
+  height: auto;
+  width: 60%;
+}
+
+.hvr-fade {
+  // display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.hvr-fade:hover,
+.hvr-fade:focus,
+.hvr-fade:active {
+  background-color: #ebe6f0; 
+  color: white;
+}
+
+.task-parent-container {
+  // width: 100%;
+  grid-area: main;
+}
+
+#task-index-list {
+  padding-bottom: 0px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.task-create-container,
+.task-modal-container {
+  h1 {
+    padding: 0 0 5px 0;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(72, 72, 72);
+  }
+
+  h2 {
+    padding: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(128, 128, 128);
+  }
+
+  form {
+    color: rgb(72, 72, 72);
+  }
+
+  label {
+    z-index: -1;
+  }
+}
+
+.modal-close {
+  background-color: #8c6faa;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.modal-close:hover {
+  background-color: #8c6faa;
+  opacity: .7;
+}
+
+.waves-effect {
+  z-index: 0;
+}
+
+.collection-item {
+  cursor: pointer;
+}
+
+.collection-item:hover {
+  color: white;
+}
+
+#task-header {
+  display: flex;
+  justify-content: space-between;
+  border-left: none;
+  border-right: none;
+}
+
+#create-task-button {
+  background-color: #ac98c2;
+}
+
+#close-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer {
+  display: none;
+}
+
+#message-id {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+#check-icon {
+  margin-right: 15px;
+}
+
+.secondary-action-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.complete-button {
+  display: flex;
+  justify-content: center;
+}
+
+.complete {
+  background-color: #a5c67a !important;
+}
+
+.task-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .fa-check {
+    color: #a5c67a;
+  }
+
+  #incomplete {
+    color: rgb(173, 173, 173); 
+  }
+
+  .fa-times {
+    color: #da6fa0;
+  }
+}
+
+.complete-show {
+  background-color: white;
+}
