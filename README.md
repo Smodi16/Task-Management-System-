@@ -20,8 +20,8 @@ Other technologies used:
 
 ### Screenshots
 
-![Create Group](https://github.com/schen13/TaskTracker/blob/master/docs/wireframe1.png)
-![Create Task](https://github.com/schen13/TaskTracker/blob/master/docs/wireframe2.png)
+![Create Group]
+![Create Task]
 
 ### Technical Info
 
