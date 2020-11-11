@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/Logo.png';
 import notebook from '../../assets/notebook.jpg';
 
 class SplashPage extends React.Component {

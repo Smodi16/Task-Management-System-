@@ -3,4 +3,5 @@ node_modules/
 .vscode/*
 .sass-cache/
 /server/config/cloudinary_keys.js
+/server/config/keys_dev.js
 
